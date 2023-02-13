@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Poppins:wght@300;400&family=Roboto:wght@400;700&family=Rubik:ital,wght@1,300;1,400&display=swap');
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+body {
+    background:linear-gradient(55deg, #949494, #228a2a, #005006);
+    background-size: 600% 600%;
+    color: white;
+    font-family: "Poppins";
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+}
+
+#titulo {
+    flex-direction: column;
+    line-height: 10px;
+}
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(243,219,0);
+    transition: 0.3s all;
+
+}
+#inscreva-se-btn {
+    border-radius: 8px;
+    padding: 10px;    
+}
+
+#inscreva-se-btn:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+    background-color: rgb(243,219,0);
+    color: rgb(25, 80, 0);
+    box-shadow: 4px 3px 3px 4px;
+
+}
+
+h1 {
+    font-weight: 200;
+}
+
+main {
+display: flex;
+flex-direction: row;
+margin-top: 50px;
+justify-content: space-around;
+}
+
+h2 {
+    font-size: 52px;
+    line-height: 10px;
+    
+}
+
+span {
+    font-size: 62px;
+    color: rgb(243, 219, 0);
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    font-weight: 200;
+    
+}
+
+img {
+    width: 620px;
+    height: 510px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    outline: 0;
+}
+
+form [type="submit"] {
+    outline: 0;
+    height: 60px;
+    width:50%;
+    background-color: rgb(65, 93, 64);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+form [type="submit"]:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+    background-color: rgb(243,219,0);
+    color: rgb(25, 80, 0);
+    box-shadow: 4px 3px 3px 4px;
+}
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border:none;
+    outline: 0;
+    font-size: 15px;
+}
